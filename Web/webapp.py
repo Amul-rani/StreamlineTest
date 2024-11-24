@@ -5,7 +5,7 @@ import joblib
 
 st.title("Promotion Prediction App")
 
-df = pd.read_csv(r'C:\Users\Amulrani\PythonLab\Hack2\Web\train_LZdllcl.csv')
+df = pd.read_csv(r'train_LZdllcl.csv')
 department = st.selectbox("Department",pd.unique(df['department']))
 region = st.selectbox("region",pd.unique(df['region']))
 education = st.selectbox("education ",pd.unique(df['education']))
